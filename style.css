@@ -20,7 +20,38 @@ hr {
 .header{
     display: grid;
     grid-template-rows: 1fr 2fr;
-    grid-template-columns: 5fr 1fr 1fr 1fr;
+    grid-template-columns: 5fr 3fr;
+}
+
+.search{
+    align-self: end;
+    justify-self: center;
+    width: 88%;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.search > input {
+    flex-basis: 95%;
+    height: 1.35rem;
+    border-radius: 12px;
+    background-color: #E2E7F0;
+    border: none;
+    padding: 4px;
+    font-family: 'Roboto';    
+}
+
+.search > svg {
+    font-size: 1.25rem;
+}
+
+.profile-info{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+}
+
+.profile-info > svg {
+    font-size: 1.65rem;
 }
 
 /* Sidebar */
