@@ -29,6 +29,8 @@ hr {
     width: 88%;
     display: flex;
     gap: 1.25rem;
+    height: 3.125rem;
+    align-items: center;
 }
 
 .search > input {
@@ -47,11 +49,74 @@ hr {
 
 .profile-info{
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns: 1fr 1fr 2fr;
+
+    align-self: end;
 }
 
 .profile-info > svg {
-    font-size: 1.65rem;
+    font-size: 1.25rem;
+    justify-self: end;
+    align-self: center;
+}
+
+.profile-info > img {
+    justify-self: center;
+    align-self: center
+}
+
+.profile-info > h3 {
+    justify-self: start;
+    align-self: center;
+
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #000;
+}
+
+
+
+.greeting{
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+.greeting-icon{
+    height: 75px;
+    margin: 0 auto;
+    grid-row: 1 / 4;
+    align-self: center;
+}
+
+.greeting-text{
+    align-self: end;
+    font-weight: 900;
+    font-size: .875rem;
+}
+
+.greeting-username{
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 3.5rem;
+    
+}
+
+.header-buttons > button {
+    background-color: #3292D3;
+    color: #FFF;
+    font-family: 'Roboto';
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    width: 80%;
 }
 
 /* Sidebar */
